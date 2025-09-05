@@ -76,3 +76,13 @@ h1, h2 { line-height: 1.2; }
   font-size: 2em;   /* about 2× normal size */
   line-height: 1.2; /* keeps spacing neat */
 }
+.hero .blurb {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;   /* small gap under the button */
+  margin-bottom: 0;     /* no extra gap before next section */
+  color: #555;
+}
+
+.section h2 {
+  margin-top: 1rem;     /* reduce top margin of the "Why rollouts fail" heading */
+}
