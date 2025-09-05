@@ -173,4 +173,7 @@ h1, h2 { line-height: 1.2; }
   flex-direction: column;
   height: 100%;
 }
+.flow-diagram + .intro {
+  margin-top: 2rem;  /* only applies to intro paragraphs directly after the flow */
+}
 
