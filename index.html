@@ -5,136 +5,159 @@
   <title>LaunchGuard360 — The Sustainment Engine for Rollouts</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Reduce change fatigue, prevent drift, and sustain improvements with a continuous Capture → Neutralize → Govern → Act loop. Start a pilot in 2–4 weeks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter has excellent legibility; fallback to system stack -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"LaunchGuard360",
-    "url":"https://launchguard360.com",
-    "contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"launchguard360@gmail.com"}
-  }
-  </script>
 </head>
 <body>
-
-  <!-- Header / Nav -->
-  <header class="lg360-header">
-    <div class="lg360-container">
-      <a class="lg360-logo" href="/">LaunchGuard360</a>
-
-      <input id="lg360-nav-toggle" type="checkbox" aria-label="Toggle navigation">
-      <label class="lg360-burger" for="lg360-nav-toggle" aria-hidden="true">☰</label>
-
-      <nav class="lg360-nav" aria-label="Primary">
+  <!-- Top bar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">LaunchGuard360</a>
+      <nav class="nav">
         <a href="/healthcare/">Healthcare</a>
         <a href="/education/">Education</a>
         <a href="/community/">Community</a>
         <a href="/enterprise/">Enterprise</a>
-        <a class="lg360-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </header>
 
+  <!-- Mobile drawer -->
+  <nav class="nav-drawer" aria-label="Mobile">
+    <a href="/healthcare/">Healthcare</a>
+    <a href="/education/">Education</a>
+    <a href="/community/">Community</a>
+    <a href="/enterprise/">Enterprise</a>
+    <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
+  </nav>
+
   <!-- Hero -->
   <section class="hero">
-    <div class="lg360-container hero-inner">
-      <h1>The Sustainment Engine for Rollouts</h1>
-      <p class="hero-sub">Prevent fatigue & drift. Turn change into durable outcomes with a continuous loop: <strong>Capture → Neutralize → Govern → Act</strong>.</p>
-      <div class="hero-cta">
-        <a class="lg360-cta lg360-cta--lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot →</a>
-        <a class="lg360-link" href="/references/">See Research & References</a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>The Sustainment Engine for Rollouts</h1>
+        <p class="lead">Prevent fatigue and drift. Convert change into durable outcomes with a continuous loop:<br><strong>Capture → Neutralize → Govern → Act</strong>.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
+          <a class="btn btn-ghost" href="/references/">Research & References</a>
+        </div>
+      </div>
+
+      <div class="loop-card">
+        <svg class="loop" viewBox="0 0 360 360" role="img" aria-label="Capture, Neutralize, Govern, Act loop">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1b64ff"/>
+              <stop offset="100%" stop-color="#8fb3ff"/>
+            </linearGradient>
+            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#1b64ff"></path>
+            </marker>
+          </defs>
+
+          <!-- Base ring -->
+          <circle cx="180" cy="180" r="120" fill="none" stroke="#ebeff6" stroke-width="18"></circle>
+
+          <!-- Segments -->
+          <path d="M180 60 A120 120 0 0 1 300 180" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
+          <path d="M300 180 A120 120 0 0 1 180 300" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
+          <path d="M180 300 A120 120 0 0 1 60 180" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
+          <path d="M60 180 A120 120 0 0 1 180 60" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
+
+          <!-- Labels -->
+          <text x="180" y="32"  text-anchor="middle" class="loop-label">Capture</text>
+          <text x="332" y="186" text-anchor="end"    class="loop-label">Neutralize</text>
+          <text x="180" y="332" text-anchor="middle" class="loop-label">Govern</text>
+          <text x="28"  y="186" text-anchor="start"  class="loop-label">Act</text>
+
+          <!-- Center -->
+          <circle cx="180" cy="180" r="58" fill="#f7faff" stroke="#e6edf7"/>
+          <text x="180" y="176" text-anchor="middle" class="loop-center">Prevent</text>
+          <text x="180" y="196" text-anchor="middle" class="loop-center">Fatigue & Drift</text>
+        </svg>
+        <ul class="loop-bullets">
+          <li><strong>Capture</strong> operational signals at the point of work (not generic surveys).</li>
+          <li><strong>Neutralize</strong> sensitive content to preserve trust while keeping signals actionable.</li>
+          <li><strong>Govern</strong> routing, escalation, and approvals through lightweight controls.</li>
+          <li><strong>Act</strong> with clear ownership and dashboards; feed outcomes back into the loop.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Stats / Proof callouts -->
-  <section class="stats">
-    <div class="lg360-container stats-grid">
-      <div class="stat">
-        <div class="stat-num">40–70%</div>
-        <div class="stat-label">of change programs underperform or miss goals</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">2–4 weeks</div>
-        <div class="stat-label">to stand up a governed pilot</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">Continuous</div>
-        <div class="stat-label">loop prevents drift back to old habits</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 360 Loop -->
-  <section class="lg360-loop">
-    <div class="lg360-container">
-      <h2>The 360° Sustainment Loop</h2>
-      <p class="muted">Our continuous cycle keeps rollouts from drifting: Capture → Neutralize → Govern → Act — then back again.</p>
-
-      <svg class="lg360-loop-svg" viewBox="0 0 320 320" role="img" aria-label="Capture, Neutralize, Govern, Act loop">
-        <defs>
-          <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z"></path>
-          </marker>
-          <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#0a66ff"/>
-            <stop offset="100%" stop-color="#7aa7ff"/>
-          </linearGradient>
-        </defs>
-
-        <circle cx="160" cy="160" r="110" fill="none" stroke="#e8edf5" stroke-width="16"></circle>
-
-        <path d="M160 50 A110 110 0 0 1 268 160" fill="none" stroke="url(#grad)" stroke-width="12" marker-end="url(#arrow)"/>
-        <path d="M268 160 A110 110 0 0 1 160 270" fill="none" stroke="url(#grad)" stroke-width="12" marker-end="url(#arrow)"/>
-        <path d="M160 270 A110 110 0 0 1 52 160" fill="none" stroke="url(#grad)" stroke-width="12" marker-end="url(#arrow)"/>
-        <path d="M52 160 A110 110 0 0 1 160 50" fill="none" stroke="url(#grad)" stroke-width="12" marker-end="url(#arrow)"/>
-
-        <text x="160" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1f3147">Capture</text>
-        <text x="298" y="166" text-anchor="end" font-size="14" font-weight="700" fill="#1f3147">Neutralize</text>
-        <text x="160" y="306" text-anchor="middle" font-size="14" font-weight="700" fill="#1f3147">Govern</text>
-        <text x="24" y="166" text-anchor="start" font-size="14" font-weight="700" fill="#1f3147">Act</text>
-
-        <circle cx="160" cy="160" r="54" fill="#f7faff" stroke="#e1e9f6"/>
-        <text x="160" y="154" text-anchor="middle" font-size="12" fill="#415a77">Prevent</text>
-        <text x="160" y="170" text-anchor="middle" font-size="12" fill="#415a77">Fatigue & Drift</text>
-      </svg>
-
-      <div class="how-grid">
-        <div>
-          <h3>Capture</h3>
-          <p>Operational signals flow in via structured inputs (not generic surveys). Noise is filtered before storage.</p>
-        </div>
-        <div>
-          <h3>Neutralize</h3>
-          <p>PII & sensitive content are neutralized to preserve trust while keeping signals actionable.</p>
-        </div>
-        <div>
-          <h3>Govern</h3>
-          <p>Routing, escalation, and approvals run through lightweight governance tuned to your org.</p>
-        </div>
-        <div>
-          <h3>Act</h3>
-          <p>Owners receive clear tasks and dashboards; outcomes feed the next cycle to sustain gains.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Social proof / why not a survey -->
+  <!-- Proof row (very light chrome) -->
   <section class="proof">
-    <div class="lg360-container proof-grid">
+    <div class="container proof-grid">
       <div class="card">
-        <h3>Not a Survey</h3>
-        <p>LaunchGuard360 is an operational signal engine. It drives routed action with governance—not generic opinion collection.</p>
+        <h3>Not a survey</h3>
+        <p>Operational signal engine with governed routing and action — not opinion collection.</p>
       </div>
       <div class="card">
-        <h3>Designed for Sustainment</h3>
-        <p>Rollouts succeed when improvements are reinforced continuously, not treated as a one-off project.</p>
+        <h3>Designed for sustainment</h3>
+        <p>Continuous reinforcement prevents drift back to old habits after go-live.</p>
       </div>
       <div class="card">
-        <h3>Start Fast</h3>
-        <p>Scoped pilot in 2–4 weeks. Bring your teams a governed loop they’ll actually trust.</p>
-      <
+        <h3>Start fast</h3>
+        <p>Pilot in 2–4 weeks with clear scope, baselines, and governance alignment.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <div class="stat-number">40–70%</div>
+        <div class="stat-text">of change programs underperform or miss goals.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">2–4 weeks</div>
+        <div class="stat-text">to stand up a governed pilot.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">Continuous</div>
+        <div class="stat-text">loop sustains improvements and reduces fatigue.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to reduce fatigue and prevent drift?</h2>
+      <p>See how the 360° loop sustains outcomes after launch.</p>
+      <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>LaunchGuard360</strong>
+        <div class="sub">The Sustainment Engine for Rollouts</div>
+      </div>
+      <nav class="footer-nav">
+        <a href="/references/">Research & References</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/security/">Security</a>
+        <a href="mailto:launchguard360@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile drawer
+    const toggle = document.querySelector('.nav-toggle');
+    const drawer = document.querySelector('.nav-drawer');
+    toggle.addEventListener('click', () => {
+      drawer.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
