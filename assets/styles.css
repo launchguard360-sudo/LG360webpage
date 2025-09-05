@@ -86,3 +86,15 @@ h1, h2 { line-height: 1.2; }
 .section h2 {
   margin-top: 1rem;     /* reduce top margin of the "Why rollouts fail" heading */
 }
+.pilot-cta {
+  display: flex;
+  align-items: center;     /* vertical alignment */
+  gap: 0.75rem;            /* spacing between button and blurb */
+  justify-content: center; /* center whole block in hero */
+  flex-wrap: wrap;         /* let blurb drop below button on small screens */
+}
+
+.pilot-cta .blurb {
+  font-size: 0.95rem;
+  color: #555;
+}
