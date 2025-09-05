@@ -1,163 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>LaunchGuard360 — The Sustainment Engine for Rollouts</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Reduce change fatigue, prevent drift, and sustain improvements with a continuous Capture → Neutralize → Govern → Act loop. Start a pilot in 2–4 weeks.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Inter has excellent legibility; fallback to system stack -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchGuard360 - The Sustainment Engine for Rollouts</title>
+    <meta name="description" content="LaunchGuard360 helps organizations avoid the 40-70% rollout failure rate through frontline insights, neutralization, and governance cycles.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Top bar -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">LaunchGuard360</a>
-      <nav class="nav">
-        <a href="/healthcare/">Healthcare</a>
-        <a href="/education/">Education</a>
-        <a href="/community/">Community</a>
-        <a href="/enterprise/">Enterprise</a>
-        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    </div>
-  </header>
-
-  <!-- Mobile drawer -->
-  <nav class="nav-drawer" aria-label="Mobile">
-    <a href="/healthcare/">Healthcare</a>
-    <a href="/education/">Education</a>
-    <a href="/community/">Community</a>
-    <a href="/enterprise/">Enterprise</a>
-    <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1>The Sustainment Engine for Rollouts</h1>
-        <p class="lead">Prevent fatigue and drift. Convert change into durable outcomes with a continuous loop:<br><strong>Capture → Neutralize → Govern → Act</strong>.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-          <a class="btn btn-ghost" href="/references/">Research & References</a>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo">LaunchGuard360</a>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/healthcare/">Healthcare</a></li>
+                <li><a href="/education/">Education</a></li>
+                <li><a href="/community/">Community</a></li>
+                <li><a href="/enterprise/">Enterprise</a></li>
+                <li><a href="/references/">References</a></li>
+            </ul>
         </div>
-      </div>
+    </header>
 
-      <div class="loop-card">
-        <svg class="loop" viewBox="0 0 360 360" role="img" aria-label="Capture, Neutralize, Govern, Act loop">
-          <defs>
-            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#1b64ff"/>
-              <stop offset="100%" stop-color="#8fb3ff"/>
-            </linearGradient>
-            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="#1b64ff"></path>
-            </marker>
-          </defs>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">The Sustainment Engine for Rollouts</h1>
+                <p class="hero-subtitle">Transform rollout failures into sustainable success through frontline insights and governance cycles</p>
+                
+                <div class="hero-stats">
+                    <span class="stat-number">40–70%</span>
+                    <span class="stat-text">of rollouts underperform due to frontline fatigue, weak visibility, and missing sustainment</span>
+                </div>
+            </div>
+        </section>
 
-          <!-- Base ring -->
-          <circle cx="180" cy="180" r="120" fill="none" stroke="#ebeff6" stroke-width="18"></circle>
+        <!-- How It Works Section -->
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">How LaunchGuard360 Works</h2>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Frontline Input</h3>
+                        <p class="step-description">Anonymous, paper-based feedback collection from frontline staff experiencing the rollout directly</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Neutralization</h3>
+                        <p class="step-description">Process raw feedback to remove bias and extract actionable insights for leadership</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Governance Cycle</h3>
+                        <p class="step-description">Route insights into existing governance structures with clear decision points and timelines</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Leadership Action</h3>
+                        <p class="step-description">Close the feedback loop with transparent "You Said → We Did" communications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <!-- Segments -->
-          <path d="M180 60 A120 120 0 0 1 300 180" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
-          <path d="M300 180 A120 120 0 0 1 180 300" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
-          <path d="M180 300 A120 120 0 0 1 60 180" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
-          <path d="M60 180 A120 120 0 0 1 180 60" fill="none" stroke="url(#g1)" stroke-width="14" marker-end="url(#arrow)"/>
+        <!-- Differentiation Section -->
+        <section class="differentiation">
+            <div class="container">
+                <h2 class="section-title">Not a Survey</h2>
+                <div class="diff-content">
+                    <p class="diff-highlight">Surveys collect opinions. LaunchGuard360™ routes neutralized insights into governance cycles.</p>
+                    <p>We don't just gather feedback – we transform it into actionable intelligence that leadership can immediately use to course-correct rollouts and demonstrate responsiveness through published "You Said → We Did" updates.</p>
+                </div>
+            </div>
+        </section>
 
-          <!-- Labels -->
-          <text x="180" y="32"  text-anchor="middle" class="loop-label">Capture</text>
-          <text x="332" y="186" text-anchor="end"    class="loop-label">Neutralize</text>
-          <text x="180" y="332" text-anchor="middle" class="loop-label">Govern</text>
-          <text x="28"  y="186" text-anchor="start"  class="loop-label">Act</text>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-container">
+                    <h2 class="cta-title">Start a Pilot</h2>
+                    <p class="cta-description">See the LaunchGuard360 difference in your organization</p>
+                    
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Paper-based</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Anonymous</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Actionable</span>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-bottom: 2rem; color: #4a5568; font-weight: 600;">See 'You Said → We Did' in 2–4 weeks</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="mailto:launchguard360@gmail.com?subject=Pilot Request&body=Hello, I'm interested in starting a LaunchGuard360 pilot for my organization. Please send me more information." class="btn-primary">
+                            Start Your Pilot →
+                        </a>
+                        <a href="mailto:launchguard360@gmail.com?subject=Questions about LaunchGuard360&body=Hello, I have questions about LaunchGuard360:" class="btn-secondary">
+                            Ask Questions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-          <!-- Center -->
-          <circle cx="180" cy="180" r="58" fill="#f7faff" stroke="#e6edf7"/>
-          <text x="180" y="176" text-anchor="middle" class="loop-center">Prevent</text>
-          <text x="180" y="196" text-anchor="middle" class="loop-center">Fatigue & Drift</text>
-        </svg>
-        <ul class="loop-bullets">
-          <li><strong>Capture</strong> operational signals at the point of work (not generic surveys).</li>
-          <li><strong>Neutralize</strong> sensitive content to preserve trust while keeping signals actionable.</li>
-          <li><strong>Govern</strong> routing, escalation, and approvals through lightweight controls.</li>
-          <li><strong>Act</strong> with clear ownership and dashboards; feed outcomes back into the loop.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Industries</h3>
+                    <a href="/healthcare/">Healthcare</a>
+                    <a href="/education/">Education</a>
+                    <a href="/community/">Community</a>
+                    <a href="/enterprise/">Enterprise</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="/references/">References</a>
+                    <a href="/privacy/">Privacy Policy</a>
+                    <a href="/security/">Security</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LaunchGuard360. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Proof row (very light chrome) -->
-  <section class="proof">
-    <div class="container proof-grid">
-      <div class="card">
-        <h3>Not a survey</h3>
-        <p>Operational signal engine with governed routing and action — not opinion collection.</p>
-      </div>
-      <div class="card">
-        <h3>Designed for sustainment</h3>
-        <p>Continuous reinforcement prevents drift back to old habits after go-live.</p>
-      </div>
-      <div class="card">
-        <h3>Start fast</h3>
-        <p>Pilot in 2–4 weeks with clear scope, baselines, and governance alignment.</p>
-      </div>
-    </div>
-  </section>
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
 
-  <!-- Stats -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat">
-        <div class="stat-number">40–70%</div>
-        <div class="stat-text">of change programs underperform or miss goals.</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">2–4 weeks</div>
-        <div class="stat-text">to stand up a governed pilot.</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">Continuous</div>
-        <div class="stat-text">loop sustains improvements and reduces fatigue.</div>
-      </div>
-    </div>
-  </section>
+        // Close nav when clicking on a link (mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
 
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to reduce fatigue and prevent drift?</h2>
-      <p>See how the 360° loop sustains outcomes after launch.</p>
-      <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <strong>LaunchGuard360</strong>
-        <div class="sub">The Sustainment Engine for Rollouts</div>
-      </div>
-      <nav class="footer-nav">
-        <a href="/references/">Research & References</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/security/">Security</a>
-        <a href="mailto:launchguard360@gmail.com">Contact</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    // Simple mobile drawer
-    const toggle = document.querySelector('.nav-toggle');
-    const drawer = document.querySelector('.nav-drawer');
-    toggle.addEventListener('click', () => {
-      drawer.classList.toggle('open');
-    });
-  </script>
+        // Close nav when clicking outside (mobile)
+        document.addEventListener('click', (e) => {
+            const navLinks = document.getElementById('navLinks');
+            const navToggle = document.querySelector('.nav-toggle');
+            const navContainer = document.querySelector('.nav-container');
+            
+            if (!navContainer.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
