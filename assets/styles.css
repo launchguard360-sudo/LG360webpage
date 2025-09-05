@@ -31,33 +31,43 @@ h1, h2 { line-height: 1.2; }
 @media (max-width: 900px) { .flow { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 540px) { .flow { grid-template-columns: 1fr; } }
 
-.flow-diagram {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 16px;
+/* New compact flow with arrows + loop icon */
+.flow-diagram{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+.flow-diagram .step{
+  border:1px solid #e6e6e6;
+  border-radius:10px;
+  padding:10px 14px;
+  background:#f7fbff;
+  font-weight:600;
+  font-size:14px;
+  min-width:120px;
+  text-align:center;
+}
+.flow-diagram .arrow{
+  font-size:20px;
+  line-height:1;
+  color:#333;
+  user-select:none;
+}
+.flow-diagram .loop{
+  font-size:22px;
+  line-height:1;
+  color:var(--brand);
+  margin-left:4px;
+  user-select:none;
 }
 
-.flow-diagram .step {
-  border: 1px solid #e6e6e6;
-  border-radius: 10px;
-  padding: 10px 14px;
-  background: #f7fbff;
-  font-weight: 600;
-  font-size: 14px;
-  min-width: 120px;
-  text-align: center;
-}
-
-.flow-diagram .arrow {
-  font-size: 20px;
-  color: #333;
-}
-
-.flow-diagram .loop {
-  font-size: 22px;
-  color: #1a73e8; /* matches your brand blue */
-  margin-left: 4px;
+/* Optional: stack nicely on small screens */
+@media (max-width:640px){
+  .flow-diagram{justify-content:flex-start;}
+  .flow-diagram .arrow{display:none;} /* hide arrows on narrow screens */
+  .flow-diagram .step{min-width:unset; width:100%;}
+  .flow-diagram .loop{margin-left:0;}
 }
