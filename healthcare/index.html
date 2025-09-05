@@ -1,58 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Healthcare — LaunchGuard360</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Solutions - LaunchGuard360</title>
+    <meta name="description" content="LaunchGuard360 helps healthcare organizations successfully implement EHR systems, clinical protocols, and operational changes.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="lg360-header">
-    <div class="lg360-container">
-      <a class="lg360-logo" href="/">LaunchGuard360</a>
-      <input id="lg360-nav-toggle" type="checkbox" aria-label="Toggle navigation">
-      <label class="lg360-burger" for="lg360-nav-toggle">☰</label>
-      <nav class="lg360-nav">
-        <a href="/healthcare/">Healthcare</a>
-        <a href="/education/">Education</a>
-        <a href="/community/">Community</a>
-        <a href="/enterprise/">Enterprise</a>
-        <a class="lg360-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo">LaunchGuard360</a>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/healthcare/">Healthcare</a></li>
+                <li><a href="/education/">Education</a></li>
+                <li><a href="/community/">Community</a></li>
+                <li><a href="/enterprise/">Enterprise</a></li>
+                <li><a href="/references/">References</a></li>
+            </ul>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="lg360-container">
-      <h1>Healthcare</h1>
-      <p class="hero-sub">Reduce change fatigue and sustain clinical improvements with a governed loop tailored for service lines and units.</p>
-      <div class="hero-cta">
-        <a class="lg360-cta lg360-cta--lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot →</a>
-        <a class="lg360-link" href="/references/">See Research & References</a>
-      </div>
-    </div>
-  </section>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Healthcare Solutions</h1>
+                <p>Ensuring successful EHR implementations, clinical protocol rollouts, and operational transformations in healthcare environments</p>
+            </div>
+        </section>
 
-  <section class="lg360-container" style="padding:22px 0">
-    <h2>Designed for Sustainment</h2>
-    <ul>
-      <li>Capture operational signals at the point of work (not generic opinion surveys).</li>
-      <li>Neutralize sensitive data early to protect staff and trust.</li>
-      <li>Govern routing and escalation to accountable owners.</li>
-      <li>Act with clear tasks and dashboards; feed outcomes back into the loop.</li>
-    </ul>
-  </section>
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>EHR Implementations</h3>
+                        <p>Healthcare EHR rollouts have notoriously high failure rates. LaunchGuard360 captures real-time frontline feedback from nurses, physicians, and staff to identify workflow disruptions before they become adoption barriers.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Clinical Protocol Changes</h3>
+                        <p>New clinical protocols require frontline buy-in to succeed. Our anonymous feedback system helps leadership understand implementation challenges and adjust protocols based on actual patient care experiences.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Operational Transformations</h3>
+                        <p>From lean initiatives to workflow redesigns, operational changes in healthcare are complex. LaunchGuard360 provides the visibility leadership needs to sustain improvements and demonstrate responsiveness to staff concerns.</p>
+                    </div>
+                </div>
 
-  <footer class="lg360-footer">
-    <div class="lg360-container lg360-footer-inner">
-      <div><strong>LaunchGuard360</strong><br> The Sustainment Engine for Rollouts</div>
-      <div class="footer-links">
-        <a href="/references/">Research & References</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/security/">Security</a>
-        <a href="mailto:launchguard360@gmail.com">Contact</a>
-      </div>
-    </div>
-  </footer>
+                <div class="hero-stats" style="max-width: 800px; margin: 3rem auto;">
+                    <h3 style="color: #2d3748; margin-bottom: 1rem;">Healthcare Challenge</h3>
+                    <p style="color: #4a5568; font-size: 1.1rem; margin-bottom: 2rem;">Healthcare rollouts fail at higher rates due to complex workflows, patient safety concerns, and high-pressure environments where staff feedback often goes unheard.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div style="text-align: center;">
+                            <div class="stat-number" style="font-size: 2rem;">60%</div>
+                            <div class="stat-text">EHR projects over budget</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="stat-number" style="font-size: 2rem;">2-4 weeks</div>
+                            <div class="stat-text">Time to visible results</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="stat-number" style="font-size: 2rem;">100%</div>
+                            <div class="stat-text">Anonymous feedback</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-container">
+                    <h2 class="cta-title">Ready for Your Healthcare Pilot?</h2>
+                    <p class="cta-description">Whether you're implementing a new EHR, rolling out clinical protocols, or transforming operations, LaunchGuard360 ensures frontline voices are heard and acted upon.</p>
+                    
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>HIPAA-conscious design</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Anonymous feedback</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Rapid deployment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="mailto:launchguard360@gmail.com?subject=Healthcare Pilot Request&body=Hello, I'm interested in starting a LaunchGuard360 pilot for our healthcare organization. Our current rollout challenge: [Please describe]" class="btn-primary">
+                            Start Healthcare Pilot →
+                        </a>
+                        <a href="mailto:launchguard360@gmail.com?subject=Healthcare Questions&body=Hello, I have questions about LaunchGuard360 for healthcare:" class="btn-secondary">
+                            Ask Questions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Industries</h3>
+                    <a href="/healthcare/">Healthcare</a>
+                    <a href="/education/">Education</a>
+                    <a href="/community/">Community</a>
+                    <a href="/enterprise/">Enterprise</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="/references/">References</a>
+                    <a href="/privacy/">Privacy Policy</a>
+                    <a href="/security/">Security</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LaunchGuard360. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            const navLinks = document.getElementById('navLinks');
+            const navContainer = document.querySelector('.nav-container');
+            
+            if (!navContainer.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
