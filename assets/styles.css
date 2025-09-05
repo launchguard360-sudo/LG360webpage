@@ -101,3 +101,20 @@ h1, h2 { line-height: 1.2; }
 .section h2 {
   margin-top: 0.5rem;  /* reduce space above the heading */
 }
+/* 1) Keep hero tight at the bottom */
+.hero {
+  margin-bottom: 0;         /* kill any default bottom margin */
+  padding-bottom: 0.5rem;   /* tiny breathing room under the button/blurb */
+}
+
+/* 2) Stop margin-collapsing at the top of the first section */
+.container .section:first-of-type {
+  margin-top: 0;                 /* remove section’s own top margin if any */
+  padding-top: 0.5rem;           /* small space that won't collapse */
+  border-top: 1px solid transparent; /* creates a formatting context to prevent collapse */
+}
+
+/* 3) Make sure the H2 isn’t pushing the section down */
+.container .section:first-of-type h2 {
+  margin-top: 0;                 /* kill escaping top margin on the heading */
+}
