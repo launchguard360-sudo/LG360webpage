@@ -1,77 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Research & References — LaunchGuard360</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/style.css">
-  <style>
-    .wrap{max-width:900px;margin:40px auto;padding:0 16px}
-    .ref{border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0;background:var(--bg-soft)}
-    .ref a{color:var(--brand)}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - LaunchGuard360</title>
+    <meta name="description" content="References and testimonials from LaunchGuard360 pilot programs and successful rollout engagements.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="lg360-header">
-    <div class="lg360-container">
-      <a class="lg360-logo" href="/">LaunchGuard360</a>
-      <input id="lg360-nav-toggle" type="checkbox" aria-label="Toggle navigation">
-      <label class="lg360-burger" for="lg360-nav-toggle">☰</label>
-      <nav class="lg360-nav">
-        <a href="/healthcare/">Healthcare</a>
-        <a href="/education/">Education</a>
-        <a href="/community/">Community</a>
-        <a href="/enterprise/">Enterprise</a>
-        <a class="lg360-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo">LaunchGuard360</a>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/healthcare/">Healthcare</a></li>
+                <li><a href="/education/">Education</a></li>
+                <li><a href="/community/">Community</a></li>
+                <li><a href="/enterprise/">Enterprise</a></li>
+                <li><a href="/references/">References</a></li>
+            </ul>
+        </div>
+    </header>
 
-  <div class="wrap">
-    <h1>Research & References</h1>
-    <p class="muted">Selected readings on change programs, fatigue, and sustainability. Use these as background context; consult originals for methods and precise effect sizes.</p>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>References</h1>
+                <p>See how organizations use LaunchGuard360 to transform rollout failures into sustainable success</p>
+            </div>
+        </section>
 
-    <div class="ref">
-      <strong>Changing change management — McKinsey (overview).</strong>
-      <div><a href="https://www.mckinsey.com/featured-insights/leadership/changing-change-management">Link</a></div>
-    </div>
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="hero-stats" style="max-width: 900px; margin: 0 auto 3rem;">
+                    <h3 style="color: #2d3748; margin-bottom: 2rem; text-align: center;">Pilot Programs Available</h3>
+                    <p style="color: #4a5568; font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">LaunchGuard360 is currently accepting organizations for pilot programs. Early participants receive the full LaunchGuard360 experience at no cost in exchange for feedback and case study participation.</p>
+                </div>
 
-    <div class="ref">
-      <strong>Barriers and facilitators influencing sustainability of hospital interventions — BMC Health Services Research (systematic review).</strong>
-      <div><a href="https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05434-9">Link</a></div>
-    </div>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Healthcare System Pilot</h3>
+                        <p><strong>Challenge:</strong> EHR upgrade affecting 200+ clinical staff</p>
+                        <p><strong>Solution:</strong> Anonymous feedback collection during go-live phase</p>
+                        <p><strong>Outcome:</strong> Identified critical workflow issues within first week, enabling rapid corrections</p>
+                        <p><em>Case study available upon pilot completion.</em></p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Educational Institution Pilot</h3>
+                        <p><strong>Challenge:</strong> New learning management system rollout</p>
+                        <p><strong>Solution:</strong> Multi-stakeholder feedback from faculty, students, and IT</p>
+                        <p><strong>Outcome:</strong> Pilot program in progress - seeking additional educational partners</p>
+                        <p><em>Accepting similar educational institutions for parallel pilots.</em></p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Enterprise Transformation Pilot</h3>
+                        <p><strong>Challenge:</strong> Process automation implementation</p>
+                        <p><strong>Solution:</strong> Governance-integrated feedback loops</p>
+                        <p><strong>Outcome:</strong> Currently recruiting enterprise organizations for Q1 2025</p>
+                        <p><em>Ideal for organizations with active change initiatives.</em></p>
+                    </div>
+                </div>
 
-    <div class="ref">
-      <strong>Sustaining quality improvement: emerging principles and tensions — BMJ Quality & Safety.</strong>
-      <div><a href="https://qualitysafety.bmj.com/content/30/11/848">Link</a></div>
-    </div>
+                <div class="hero-stats" style="max-width: 800px; margin: 3rem auto;">
+                    <h3 style="color: #2d3748; margin-bottom: 1rem;">Pilot Program Benefits</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                        <div style="text-align: center;">
+                            <div class="stat-number" style="font-size: 2rem;">$0</div>
+                            <div class="stat-text">Cost for pilot participants</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="stat-number" style="font-size: 2rem;">Full</div>
+                            <div class="stat-text">LaunchGuard360 experience</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="stat-number" style="font-size: 2rem;">2-4 weeks</div>
+                            <div class="stat-text">Time to see results</div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="ref">
-      <strong>Change fatigue among clinical nurses — SAGE (cross-sectional).</strong>
-      <div><a href="https://journals.sagepub.com/doi/pdf/10.1177/11786329251318586">Link</a></div>
-    </div>
+                <div class="content-card" style="max-width: 800px; margin: 2rem auto; text-align: center;">
+                    <h3>Research Partnership</h3>
+                    <p>LaunchGuard360 is conducting research on rollout sustainability in partnership with organizational change management practitioners. Pilot participants contribute to industry knowledge while receiving expert support for their initiatives.</p>
+                    <p><strong>Academic and consulting partners welcome.</strong></p>
+                </div>
+            </div>
+        </section>
 
-    <div class="ref">
-      <strong>Clinical nurses’ change fatigue and associated factors — Frontiers in Public Health.</strong>
-      <div><a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1566534/pdf">Link</a></div>
-    </div>
-
-    <p style="margin-top:18px" class="muted">
-      Notes for copywriting: prefer directional phrasing like “often”, “linked to”, “commonly cited” unless your source provides precise, validated effect sizes for your exact context.
-    </p>
-  </div>
-
-  <footer class="lg360-footer">
-    <div class="lg360-container lg360-footer-inner">
-      <div><strong>LaunchGuard360</strong><br> The Sustainment Engine for Rollouts</div>
-      <div class="footer-links">
-        <a href="/references/">Research & References</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/security/">Security</a>
-        <a href="mailto:launchguard360@gmail.com">Contact</a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
-
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-container">
+                    <h2 class="cta-title">Join Our Pilot Program</h2>
+                    <p class="cta-description">Be among the first organizations to experience LaunchGuard360. Pilot participants receive full service delivery, expert support, and contribute to cutting-edge research on rollout success.</p>
+                    
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>No cost participation</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Expert guidance included</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Research contribution</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="mailto:launchguard360@gmail.com?subject=Pilot Program Application&body=Hello, I'm interested in joining the LaunchGuard360 pilot program. Our organization: [Name] Our current rollout challenge: [Please describe] Timeline: [When are you implementing?
