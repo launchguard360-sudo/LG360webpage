@@ -26,6 +26,38 @@ h1, h2 { line-height: 1.2; }
 
 .footer { border-top: 1px solid #eee; padding: 20px var(--pad); text-align: center; color: #555; }
 
+.flow-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.flow-diagram .step {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: #f7fbff;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.flow-diagram .arrow {
+  font-size: 20px;
+  color: #333;
+}
+
+.flow-diagram .loop {
+  font-size: 22px;
+  color: #1a73e8; /* matches your brand blue */
+  margin-left: 4px;
+}
+
+
 .note { background:#f8f9fb; border:1px solid #e8ecf2; border-radius: var(--radius); padding:16px; }
 
 @media (max-width: 900px) { .flow { grid-template-columns: 1fr 1fr; } }
