@@ -154,4 +154,23 @@ h1, h2 { line-height: 1.2; }
   color: #555;
   line-height: 1.5;
 }
+.steps-detail {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+@media (min-width: 1024px) {
+  .steps-detail {
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+  }
+}
+
+.steps-detail .step {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
