@@ -118,3 +118,14 @@ h1, h2 { line-height: 1.2; }
 .container .section:first-of-type h2 {
   margin-top: 0;                 /* kill escaping top margin on the heading */
 }
+.hero {
+  text-align: center;   /* center text in the hero */
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;  /* tighten spacing below heading */
+}
+
+.hero p {
+  margin-top: 0;          /* prevent extra gap above */
+}
