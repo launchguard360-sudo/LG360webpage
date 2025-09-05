@@ -71,3 +71,8 @@ h1, h2 { line-height: 1.2; }
   .flow-diagram .step{min-width:unset; width:100%;}
   .flow-diagram .loop{margin-left:0;}
 }
+/* Make LaunchGuard360™ brand text bigger */
+.nav .brand {
+  font-size: 2em;   /* about 2× normal size */
+  line-height: 1.2; /* keeps spacing neat */
+}
