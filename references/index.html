@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
-  <nav class="nav" aria-label="Primary">
-    <a class="brand" href="/">LaunchGuard360™</a>
-    <a href="/healthcare/">Healthcare</a>
-    <a href="/education/">Education</a>
-    <a href="/community/">Community</a>
-    <a href="/enterprise/">Enterprise</a>
-    <a class="btn" href="/#contact">Start a Pilot</a>
-  </nav>
+  <!-- Site Header + Nav (sticky + logo) -->
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a class="logo-link" href="/" aria-label="Home">
+        <img src="/assets/img/logo.png" alt="LaunchGuard360 Logo" class="logo" />
+      </a>
+      <a class="brand" href="/">LaunchGuard360™</a>
+      <a href="/healthcare/">Healthcare</a>
+      <a href="/education/">Education</a>
+      <a href="/community/">Community</a>
+      <a href="/enterprise/">Enterprise</a>
+      <a class="btn" href="/#contact">Start a Pilot</a>
+    </nav>
+  </header>
 
   <main class="container">
     <header class="section">
@@ -147,18 +153,32 @@
     </section>
   </main>
 
-
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <nav aria-label="Footer">
       <a href="/privacy/">Privacy</a>
-       <a href="/security/">Security</a>
+      <a href="/security/">Security</a>
       <a href="/terms/">Terms</a>
       <a href="mailto:launchguard360@gmail.com">Contact</a>
     </nav>
     <small>© <span id="year"></span> LaunchGuard360™ — Patent Pending</small>
   </footer>
 
-  
+  <script>
+    // Scroll-shrink effect (same as other pages)
+    (function () {
+      const toggle = () => {
+        document.body.classList.toggle('is-shrunk', window.scrollY > 10);
+      };
+      toggle();
+      window.addEventListener('scroll', toggle, { passive: true });
+    })();
+
+    // Footer year
+    (function () {
+      var el = document.getElementById('year');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
