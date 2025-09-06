@@ -4,9 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LaunchGuard360™ — The Sustainment Engine for Rollouts</title>
+
+  <!-- SEO & Sharing -->
+  <meta name="description" content="LaunchGuard360™ turns frontline input into visible action with a Closed-Loop Sustainment™ engine for high-success rollouts." />
+  <meta property="og:title" content="LaunchGuard360™ — Closed-Loop Sustainment™ for Rollouts" />
+  <meta property="og:description" content="Capture → Neutralize → Govern → Act. Turn input into visible, sustained action." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Site Header + Nav -->
   <header>
     <nav class="nav" aria-label="Primary">
@@ -22,7 +35,7 @@
   <!-- Hero (no nested .container to avoid extra padding) -->
   <section class="hero" aria-labelledby="hero-title">
     <h1 id="hero-title">Closed-Loop Sustainment™ Engine for Rollouts</h1>
-    <p>Capture → Neutralize → Govern → Act ⟲ <strong>(Patent Pending)</strong></p>
+    <p class="lead">Capture → Neutralize → Govern → Act ⟲ <strong>(Patent Pending)</strong></p>
     <div class="pilot-cta">
       <a class="btn primary" href="#contact">Run a 6-week paper pilot</a>
       <span class="blurb">Test sustainment in a low-risk environment before investing at scale.</span>
@@ -30,7 +43,7 @@
   </section>
 
   <!-- Main content uses a single container wrapper -->
-  <main class="container">
+  <main id="main" class="container">
     <!-- Why Rollouts & Initiatives Fail -->
     <section id="why-fail" class="section" aria-labelledby="why-title">
       <h2 id="why-title">Why Rollouts &amp; Initiatives Fail</h2>
@@ -125,11 +138,18 @@
         Together, these stages form a Closed-Loop Sustainment™ engine: reducing frontline fatigue, limiting initiative 
         overload, and converting feedback into measurable ROI.
       </p>
+
+      <!-- Repeated CTA for convenience -->
+      <p style="text-align:center; margin-top: 1rem;">
+        <a class="btn primary" href="#contact" aria-label="Start a pilot after learning how it works">
+          Start a Pilot
+        </a>
+      </p>
     </section>
 
     <section class="section" aria-labelledby="not-survey-title">
       <h2 id="not-survey-title">LaunchGuard360™ is Not a Survey</h2>
-      <p>Surveys collect opinions. LaunchGuard360™ <strong>routes neutralized insights into decision-making processes</strong> and publishes “You Said → We Did™".</p>
+      <p class="lead">Surveys collect opinions. LaunchGuard360™ <strong>routes neutralized insights into decision-making processes</strong> and publishes “You Said → We Did™".</p>
       <p class="note">Questions? Email <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>.</p>
     </section>
 
@@ -145,8 +165,18 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <small>LaunchGuard360™ — Patent Pending</small>
+  <footer class="footer" role="contentinfo">
+    <nav aria-label="Footer">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="mailto:launchguard360@gmail.com">Contact</a>
+    </nav>
+    <small>© <span id="year"></span> LaunchGuard360™ — Patent Pending</small>
   </footer>
+
+  <script>
+    // Tiny helper for © year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
