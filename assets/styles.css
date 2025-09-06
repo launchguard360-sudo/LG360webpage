@@ -284,3 +284,47 @@ main .section:first-of-type { margin-top: 12px; }
   h1, h2, h3, h4, h5, h6 { color: #f0f2f8; }
   .steps-detail .step h3 { color: #f0f2f8; }
 }
+/* === Added: Sticky header + logo + scroll-shrink effect === */
+
+/* Make the header sticky (uses existing <header>) */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff; /* ensures content doesn’t show through while sticking */
+}
+
+/* Logo defaults */
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+/* Keep logo & brand aligned nicely without changing your .nav layout */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Shrink the header/nav on scroll */
+.is-shrunk .nav {
+  padding: 8px var(--pad); /* was 14px; this overrides only when scrolled */
+}
+
+/* Shrink brand type slightly on scroll (doesn't change original rule, just overrides in state) */
+.is-shrunk .nav .brand {
+  font-size: 1.7em; /* gently smaller from the default 2em */
+}
+
+/* Shrink the logo slightly on scroll */
+.is-shrunk .logo {
+  transform: scale(0.9);
+  opacity: 0.96;
+}
+
+/* Dark mode background for sticky header parity */
+@media (prefers-color-scheme: dark){
+  header { background:#0b0c0f; }
+}
