@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LaunchGuard360™ — The Sustainment Engine for Rollouts</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
   <!-- Site Header + Nav -->
@@ -19,135 +19,129 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Closed-Loop Sustainment™ Engine for Rollouts</h1>
-      <p>Capture → Neutralize → Govern → Act ⟲ <strong>(Patent Pending)</strong></p>
-      <div class="pilot-cta">
-        <a class="btn primary" href="#contact">Run a 6-week paper pilot</a>
-        <span class="blurb">Test sustainment in a low-risk environment before investing at scale.</span>
-      </div>
+  <!-- Hero (no nested .container to avoid extra padding) -->
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">Closed-Loop Sustainment™ Engine for Rollouts</h1>
+    <p>Capture → Neutralize → Govern → Act ⟲ <strong>(Patent Pending)</strong></p>
+    <div class="pilot-cta">
+      <a class="btn primary" href="#contact">Run a 6-week paper pilot</a>
+      <span class="blurb">Test sustainment in a low-risk environment before investing at scale.</span>
     </div>
   </section>
 
-  <!-- IMPORTANT: no .container here to avoid extra top padding -->
-  <main>
+  <!-- Main content uses a single container wrapper -->
+  <main class="container">
     <!-- Why Rollouts & Initiatives Fail -->
-    <section id="why-fail" class="section">
-      <div class="container">
-        <h2>Why Rollouts &amp; Initiatives Fail</h2>
-        <p class="lead">
-          Underperformance is rarely a tech problem—it’s a sustainment problem: fatigue, overload, governance gaps, and missing feedback loops.
-        </p>
+    <section id="why-fail" class="section" aria-labelledby="why-title">
+      <h2 id="why-title">Why Rollouts &amp; Initiatives Fail</h2>
+      <p class="lead">
+        Underperformance is rarely a tech problem—it’s a sustainment problem: fatigue, overload, governance gaps, and missing feedback loops.
+      </p>
 
-        <div class="why-fail-grid">
-          <article class="card">
-            <h3>🏥 Healthcare</h3>
-            <p>
-              <strong>40–70%</strong> of initiatives underperform due to frontline fatigue, initiative overload, governance gaps, and missing sustainment.
-              <a href="/references/">sources</a>
-            </p>
-          </article>
+      <div class="why-fail-grid">
+        <!-- Healthcare -->
+        <article class="card">
+          <h3>🏥 Healthcare</h3>
+          <p>
+            <strong>40–70%</strong> of initiatives underperform due to frontline fatigue, initiative overload, governance gaps, and missing sustainment.
+            <a href="/references/">sources</a>
+          </p>
+        </article>
 
-          <article class="card">
-            <h3>🏫 Education</h3>
-            <p>
-              New programs stall when teachers are overburdened, support fades after rollout, and feedback loops fail to drive visible action.
-            </p>
-          </article>
+        <!-- Education -->
+        <article class="card">
+          <h3>🏫 Education</h3>
+          <p>
+            New programs stall when teachers are overburdened, support fades after rollout, and feedback loops fail to drive visible action.
+          </p>
+        </article>
 
-          <article class="card">
-            <h3>🏛️ Community</h3>
-            <p>
-              Local programs lose momentum when community input isn’t anonymized, neutralized, and turned into visible, accountable action.
-            </p>
-          </article>
-          
-          <article class="card">
-            <h3>🏢 Enterprise</h3>
-            <p>
-              Change efforts falter when employees see initiatives as top-down, duplicative, or unsustained—and when governance is unclear.
-            </p>
-          </article>
-        </div>
-
-        <p class="note" style="margin-top: 0.75rem;">
-          LaunchGuard is vertical-agnostic: start with a pilot in one unit, then scale across departments and sites.
-        </p>
+        <!-- Community / Policy -->
+        <article class="card">
+          <h3>🏛️ Community</h3>
+          <p>
+            Local programs lose momentum when community input isn’t anonymized, neutralized, and turned into visible, accountable action.
+          </p>
+        </article>
+        
+        <!-- Enterprise -->
+        <article class="card">
+          <h3>🏢 Enterprise</h3>
+          <p>
+            Change efforts falter when employees see initiatives as top-down, duplicative, or unsustained—and when governance is unclear.
+          </p>
+        </article>
       </div>
+
+      <p class="note" style="margin-top: 0.75rem;">
+        LaunchGuard is vertical-agnostic: start with a pilot in one unit, then scale across departments and sites.
+      </p>
     </section>
 
-    <section class="section works" id="how-it-works">
-      <div class="container">
-        <h2>How LaunchGuard360™ Works</h2>
+    <section class="section works" id="how-it-works" aria-labelledby="how-title">
+      <h2 id="how-title">How LaunchGuard360™ Works</h2>
 
-        <div class="flow-diagram" role="group" aria-label="Closed-loop flow">
-          <div class="step">Frontline Input</div>
-          <span class="arrow" aria-hidden="true">→</span>
-          <div class="step">Neutralization</div>
-          <span class="arrow" aria-hidden="true">→</span>
-          <div class="step">Governance Cycle</div>
-          <span class="arrow" aria-hidden="true">→</span>
-          <div class="step">Leadership Action</div>
-          <span class="loop" title="Feedback loop">⟲</span>
-        </div>
-
-        <p class="intro">
-          Beyond the four stages, LaunchGuard360™ ensures frontline insights are transformed into 
-          sustained organizational improvements. Each step addresses a common rollout failure mode:
-        </p>
-
-        <div class="steps-detail">
-          <div class="step">
-            <h3>1. Capture</h3>
-            <p>Frontline input is gathered in real time through lightweight, anonymous channels. This avoids survey fatigue, 
-            increases candor, and captures issues as they emerge rather than months later.</p>
-          </div>
-          <div class="step">
-            <h3>2. Neutralize</h3>
-            <p>Comments are stripped of identifiers and reframed into neutral, actionable language. This lowers political risk, 
-            reduces blame, and ensures every voice is safe to share.</p>
-          </div>
-          <div class="step">
-            <h3>3. Govern</h3>
-            <p>Insights are routed directly into governance cycles and decision tables. No more stalled feedback loops—issues 
-            are aligned with owners, priorities, and available resources.</p>
-          </div>
-          <div class="step">
-            <h3>4. Act</h3>
-            <p>Leaders respond with visible actions: “You Said → We Did™” This transparency reinforces trust, sustains 
-            participation, and helps hard-wire new practices into daily workflows.</p>
-          </div>
-        </div>
-
-        <p class="closing">
-          Together, these stages form a Closed-Loop Sustainment™ engine: reducing frontline fatigue, limiting initiative 
-          overload, and converting feedback into measurable ROI.
-        </p>
+      <!-- Flow diagram -->
+      <div class="flow-diagram" role="group" aria-label="Closed-loop flow">
+        <div class="step">Frontline Input</div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div class="step">Neutralization</div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div class="step">Governance Cycle</div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div class="step">Leadership Action</div>
+        <span class="loop" title="Feedback loop">⟲</span>
       </div>
+
+      <p class="intro">
+        Beyond the four stages, LaunchGuard360™ ensures frontline insights are transformed into 
+        sustained organizational improvements. Each step addresses a common rollout failure mode:
+      </p>
+
+      <div class="steps-detail">
+        <div class="step">
+          <h3>1. Capture</h3>
+          <p>Frontline input is gathered in real time through lightweight, anonymous channels. This avoids survey fatigue, 
+          increases candor, and captures issues as they emerge rather than months later.</p>
+        </div>
+        <div class="step">
+          <h3>2. Neutralize</h3>
+          <p>Comments are stripped of identifiers and reframed into neutral, actionable language. This lowers political risk, 
+          reduces blame, and ensures every voice is safe to share.</p>
+        </div>
+        <div class="step">
+          <h3>3. Govern</h3>
+          <p>Insights are routed directly into governance cycles and decision tables. No more stalled feedback loops—issues 
+          are aligned with owners, priorities, and available resources.</p>
+        </div>
+        <div class="step">
+          <h3>4. Act</h3>
+          <p>Leaders respond with visible actions: “You Said → We Did™”. This transparency reinforces trust, sustains 
+          participation, and helps hard-wire new practices into daily workflows.</p>
+        </div>
+      </div>
+
+      <p class="closing">
+        Together, these stages form a Closed-Loop Sustainment™ engine: reducing frontline fatigue, limiting initiative 
+        overload, and converting feedback into measurable ROI.
+      </p>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>LaunchGuard360™ is Not a Survey</h2>
-        <p>Surveys collect opinions. LaunchGuard360™ <strong>routes neutralized insights into decision-making processes</strong> and publishes “You Said → We Did™".</p>
-        <p class="note">Questions? Email <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>.</p>
-      </div>
+    <section class="section" aria-labelledby="not-survey-title">
+      <h2 id="not-survey-title">LaunchGuard360™ is Not a Survey</h2>
+      <p>Surveys collect opinions. LaunchGuard360™ <strong>routes neutralized insights into decision-making processes</strong> and publishes “You Said → We Did™".</p>
+      <p class="note">Questions? Email <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>.</p>
     </section>
 
     <section id="contact" class="section" aria-labelledby="contact-title">
-      <div class="container">
-        <h2 id="contact-title">Start a LaunchGuard360™ Pilot</h2>
-        <p>Paper-based. Anonymous. Actionable. See "You Said → We Did™" in 4–6 weeks.</p>
-
-        <p>
-          <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog"
-             target="_blank" rel="noopener">
-            Open Pilot Interest Form
-          </a>
-        </p>
-      </div>
+      <h2 id="contact-title">Start a LaunchGuard360™ Pilot</h2>
+      <p>Paper-based. Anonymous. Actionable. See “You Said → We Did™” in 4–6 weeks.</p>
+      <p>
+        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog"
+           target="_blank" rel="noopener">
+          Open Pilot Interest Form
+        </a>
+      </p>
     </section>
   </main>
 
