@@ -23,6 +23,11 @@
   <!-- Site Header + Nav -->
   <header>
     <nav class="nav" aria-label="Primary">
+      <!-- ADDED: logo (top-left) -->
+      <a class="logo-link" href="/" aria-label="Home">
+        <img src="/assets/img/logo.png" alt="LaunchGuard360 Logo" class="logo" />
+      </a>
+
       <a class="brand" href="/">LaunchGuard360™</a>
       <a href="/healthcare/">Healthcare</a>
       <a href="/education/">Education</a>
@@ -178,6 +183,16 @@
   <script>
     // Tiny helper for © year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ADDED: scroll shrink effect (adds 'is-shrunk' to <body> after slight scroll)
+    (function () {
+      const toggle = () => {
+        document.body.classList.toggle('is-shrunk', window.scrollY > 10);
+      };
+      toggle();
+      window.addEventListener('scroll', toggle, { passive: true });
+    })();
   </script>
 </body>
 </html>
+
