@@ -1,43 +1,129 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Security — LaunchGuard360</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Security — LaunchGuard360™</title>
+  <meta name="description" content="LaunchGuard360 security practices, encryption, and governance controls for safe sustainment processes.">
+
+  <!-- Base styles already used across the site -->
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <!-- Page-specific polish for Security -->
+  <link rel="stylesheet" href="/assets/security.css" />
 </head>
 <body>
-  <header class="lg360-header">
-    <div class="lg360-container">
-      <a class="lg360-logo" href="/">LaunchGuard360</a>
-      <input id="lg360-nav-toggle" type="checkbox" aria-label="Toggle navigation">
-      <label class="lg360-burger" for="lg360-nav-toggle">☰</label>
-      <nav class="lg360-nav">
-        <a href="/healthcare/">Healthcare</a>
-        <a href="/education/">Education</a>
-        <a href="/community/">Community</a>
-        <a href="/enterprise/">Enterprise</a>
-        <a class="lg360-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog">Start a Pilot</a>
-      </nav>
-    </div>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Site Header + Nav (matches other pages) -->
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/">LaunchGuard360™</a>
+      <a href="/healthcare/">Healthcare</a>
+      <a href="/education/">Education</a>
+      <a href="/community/">Community</a>
+      <a href="/enterprise/">Enterprise</a>
+      <a href="/references/">References</a>
+    </nav>
   </header>
 
-  <section class="lg360-container" style="padding:28px 0">
-    <h1>Security</h1>
-    <p>We use strong encryption in-transit and at-rest; governance and access controls are applied to routed actions. Contact us for our security overview.</p>
+  <!-- Page Hero -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container hero-narrow">
+      <h1 id="page-title">Security</h1>
+      <p class="lead">How LaunchGuard360™ ensures encryption, governance, and access controls across all sustainment processes.</p>
+      <p class="hero-meta"><em>Last updated: December 2024</em></p>
+    </div>
   </section>
 
-  <footer class="lg360-footer">
-    <div class="lg360-container lg360-footer-inner">
-      <div><strong>LaunchGuard360</strong><br> The Sustainment Engine for Rollouts</div>
-      <div class="footer-links">
-        <a href="/references/">Research & References</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/security/">Security</a>
-        <a href="mailto:launchguard360@gmail.com">Contact</a>
+  <!-- Content -->
+  <main id="main" class="container policy-wrap" aria-describedby="page-title">
+    <!-- Main content -->
+    <article class="policy-main content-prose">
+      <section id="encryption" class="content-card">
+        <h2>Encryption Standards</h2>
+        <p>All data is encrypted in-transit and at-rest using industry-standard protocols (TLS 1.2+ for transit, AES-256 for storage). Encryption keys are managed with strict lifecycle policies.</p>
+      </section>
+
+      <section id="governance" class="content-card">
+        <h2>Governance &amp; Access Controls</h2>
+        <ul>
+          <li>Role-based access controls ensure only authorized staff can access sensitive systems.</li>
+          <li>All access is logged and reviewed regularly for compliance.</li>
+          <li>Separation of duties enforced for critical operations.</li>
+        </ul>
+      </section>
+
+      <section id="infrastructure" class="content-card">
+        <h2>Infrastructure Security</h2>
+        <ul>
+          <li>Systems hosted in secure, compliant data centers (ISO 27001, SOC 2).</li>
+          <li>Redundancy and failover across multiple availability zones.</li>
+          <li>Regular penetration testing and vulnerability scanning.</li>
+        </ul>
+      </section>
+
+      <section id="incident-response" class="content-card">
+        <h2>Incident Response</h2>
+        <p>We maintain a documented incident response plan including:</p>
+        <ul>
+          <li>24/7 monitoring of systems for anomalies</li>
+          <li>Clear escalation procedures and communication protocols</li>
+          <li>Post-incident reviews to strengthen controls</li>
+        </ul>
+      </section>
+
+      <section id="client-controls" class="content-card">
+        <h2>Client Controls</h2>
+        <p>Clients remain in control of their governance data. LaunchGuard360™ does not share client insights externally without explicit consent.</p>
+      </section>
+
+      <!-- CTA -->
+      <section class="content-card cta-card" aria-labelledby="security-cta-title">
+        <h2 id="security-cta-title">Need Our Security Overview?</h2>
+        <p>Contact us to receive a detailed security whitepaper or to discuss custom security requirements for your organization.</p>
+        <div class="cta-buttons">
+          <a class="btn primary" href="mailto:launchguard360@gmail.com?subject=Security%20Overview%20Request&body=Hello%2C%20please%20send%20me%20the%20LaunchGuard360%20security%20overview.">
+            Request Security Overview →
+          </a>
+          <a class="btn secondary" href="/privacy/">View Privacy Policy</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- Sidebar TOC -->
+    <aside class="policy-aside" aria-label="On this page">
+      <div class="card toc">
+        <h3>On this page</h3>
+        <ol>
+          <li><a href="#encryption">Encryption Standards</a></li>
+          <li><a href="#governance">Governance &amp; Access</a></li>
+          <li><a href="#infrastructure">Infrastructure Security</a></li>
+          <li><a href="#incident-response">Incident Response</a></li>
+          <li><a href="#client-controls">Client Controls</a></li>
+        </ol>
       </div>
-    </div>
+
+      <div class="note mini-note">
+        <strong>Tip:</strong> Ask us about our security certification roadmap.
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <nav aria-label="Footer">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="mailto:launchguard360@gmail.com">Contact</a>
+    </nav>
+    <small>© <span id="year"></span> LaunchGuard360™ — Patent Pending</small>
   </footer>
+
+  <script>
+    // © year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
