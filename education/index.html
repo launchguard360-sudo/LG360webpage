@@ -8,41 +8,62 @@
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
-  <nav class="nav" aria-label="Primary">
-    <a class="brand" href="/">LaunchGuard360™</a>
-    <a href="/healthcare/">Healthcare</a>
-    <a href="/education/">Education</a>
-    <a href="/community/">Community</a>
-    <a href="/enterprise/">Enterprise</a>
-    <a class="btn" href="/#contact">Start a Pilot</a>
-  </nav>
+  <!-- Site Header + Nav -->
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a class="logo-link" href="/" aria-label="Home">
+        <img src="/assets/img/logo.png" alt="LaunchGuard360 Logo" class="logo" />
+      </a>
+      <a class="brand" href="/">LaunchGuard360™</a>
+      <a href="/healthcare/">Healthcare</a>
+      <a href="/education/">Education</a>
+      <a href="/community/">Community</a>
+      <a href="/enterprise/">Enterprise</a>
+      <a class="btn" href="/#contact">Start a Pilot</a>
+    </nav>
+  </header>
 
   <main class="container">
-  <section id="education" class="section">
-    <h1>Education Pilots — Reduce Classroom Friction</h1>
-    <p>Anonymous student input → neutralized → routed to faculty/admin → visible actions (“You Said → We Did™”) ⟲</p>
-    <ul>
-      <li><strong>Use:</strong> new student onboarding, LMS/app rollout, community space operations</li>
-      <li><strong>Metrics:</strong> response rate, actionability, time-to-fix, trust score</li>
-      <li><strong>Trust:</strong> anonymous capture; no impact on grades or evaluations</li>
-      <li><strong>Impact:</strong> improved adoption of tools, smoother onboarding, and reduced classroom friction</li>
-    </ul>
-    <p class="note">Questions? Email <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>.</p>
-    <p><a class="btn primary" href="/#contact">Start an education pilot</a></p>
-  </section>
+    <section id="education" class="section">
+      <h1>Education Pilots — Reduce Classroom Friction</h1>
+      <p>Anonymous student input → neutralized → routed to faculty/admin → visible actions (“You Said → We Did™”) ⟲</p>
+      <ul>
+        <li><strong>Use:</strong> new student onboarding, LMS/app rollout, community space operations</li>
+        <li><strong>Metrics:</strong> response rate, actionability, time-to-fix, trust score</li>
+        <li><strong>Trust:</strong> anonymous capture; no impact on grades or evaluations</li>
+        <li><strong>Impact:</strong> improved adoption of tools, smoother onboarding, and reduced classroom friction</li>
+      </ul>
+      <p class="note">Questions? Email <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>.</p>
+      <p><a class="btn primary" href="/#contact">Start an education pilot</a></p>
+    </section>
   </main>
-
 
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <nav aria-label="Footer">
       <a href="/privacy/">Privacy</a>
-       <a href="/security/">Security</a>
+      <a href="/security/">Security</a>
       <a href="/terms/">Terms</a>
       <a href="mailto:launchguard360@gmail.com">Contact</a>
     </nav>
     <small>© <span id="year"></span> LaunchGuard360™ — Patent Pending</small>
   </footer>
-  
+
+  <script>
+    // Scroll-shrink effect
+    (function () {
+      const toggle = () => {
+        document.body.classList.toggle('is-shrunk', window.scrollY > 10);
+      };
+      toggle();
+      window.addEventListener('scroll', toggle, { passive: true });
+    })();
+
+    // Footer year
+    (function () {
+      var el = document.getElementById('year');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
