@@ -199,3 +199,20 @@ h1, h2 { line-height: 1.2; }
     margin-top: 0; /* avoid double-stacking top margins */
   }
 </style>
+
+/* Tighten hero bottom space */
+.hero {
+  padding-bottom: 1rem !important; /* reduce from default 3–4rem */
+  margin-bottom: 0 !important;
+}
+
+/* Reduce gap above first section after hero */
+#why-fail {
+  margin-top: 1rem !important; /* smaller gap */
+}
+
+/* Optional: adjust the blurb/button row so it wraps neatly */
+.pilot-cta {
+  margin-bottom: 0.5rem;
+}
+
