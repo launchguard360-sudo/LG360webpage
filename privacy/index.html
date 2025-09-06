@@ -1,183 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - LaunchGuard360</title>
-    <meta name="description" content="LaunchGuard360 privacy policy and data protection practices for feedback collection and governance integration.">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — LaunchGuard360™</title>
+  <meta name="description" content="LaunchGuard360 privacy policy and data protection practices for feedback collection and governance integration.">
+
+  <!-- Base styles already used across the site -->
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <!-- Page-specific polish for Privacy -->
+  <link rel="stylesheet" href="/assets/privacy.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <a href="/" class="logo">LaunchGuard360</a>
-            <button class="nav-toggle" onclick="toggleNav()">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/healthcare/">Healthcare</a></li>
-                <li><a href="/education/">Education</a></li>
-                <li><a href="/community/">Community</a></li>
-                <li><a href="/enterprise/">Enterprise</a></li>
-                <li><a href="/references/">References</a></li>
-            </ul>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Site Header + Nav (matches other pages) -->
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/">LaunchGuard360™</a>
+      <a href="/healthcare/">Healthcare</a>
+      <a href="/education/">Education</a>
+      <a href="/community/">Community</a>
+      <a href="/enterprise/">Enterprise</a>
+      <a href="/references/">References</a>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container hero-narrow">
+      <h1 id="page-title">Privacy Policy</h1>
+      <p class="lead">How LaunchGuard360™ protects feedback confidentiality and manages data throughout the governance process.</p>
+      <p class="hero-meta"><em>Last updated: December 2024</em></p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <main id="main" class="container policy-wrap" aria-describedby="page-title">
+    <!-- Main content -->
+    <article class="policy-main content-prose">
+      <section id="anonymous-by-design" class="content-card">
+        <h2>Anonymous by Design</h2>
+        <p>LaunchGuard360's core methodology is built on anonymous feedback collection. We do not collect, store, or process personally identifiable information from feedback providers. Our paper-based collection system ensures no digital tracking of individual responses.</p>
+      </section>
+
+      <section id="data-collection" class="content-card">
+        <h2>Data Collection Practices</h2>
+        <p><strong>What we collect:</strong></p>
+        <ul>
+          <li>Anonymous feedback content related to rollout experiences</li>
+          <li>General organizational context (department, role type — not specific individuals)</li>
+          <li>Timeline information for governance cycle integration</li>
+        </ul>
+        <p><strong>What we do not collect:</strong></p>
+        <ul>
+          <li>Names, email addresses, or other personal identifiers</li>
+          <li>Individual performance data or evaluations</li>
+          <li>Personal opinions about specific people</li>
+        </ul>
+      </section>
+
+      <section id="processing-neutralization" class="content-card">
+        <h2>Data Processing and Neutralization</h2>
+        <p>Our neutralization process transforms raw feedback into actionable insights while maintaining anonymity:</p>
+        <ul>
+          <li>Individual responses are aggregated into thematic insights</li>
+          <li>Identifying details are removed or generalized</li>
+          <li>Insights are categorized by issue type and urgency</li>
+          <li>No individual response is traceable to a specific person</li>
+        </ul>
+      </section>
+
+      <section id="sharing-governance" class="content-card">
+        <h2>Data Sharing and Governance Integration</h2>
+        <p>LaunchGuard360 shares only neutralized insights with organizational leadership:</p>
+        <ul>
+          <li>Insights are shared with designated governance contacts only</li>
+          <li>No raw feedback or individual responses are shared</li>
+          <li>Data remains within the client organization's governance structure</li>
+          <li>Third-party sharing requires explicit organizational consent</li>
+        </ul>
+      </section>
+
+      <section id="security-retention" class="content-card">
+        <h2>Data Security and Retention</h2>
+        <p><strong>Physical Security:</strong> Paper-based feedback forms are securely stored and processed in controlled environments.</p>
+        <p><strong>Digital Security:</strong> Any digital processing uses encrypted systems with access limited to authorized personnel.</p>
+        <p><strong>Retention:</strong> Raw feedback materials are destroyed after neutralization and insight delivery. Anonymized insights may be retained for trend analysis as specified in client agreements.</p>
+      </section>
+
+      <section id="industry-specific" class="content-card">
+        <h2>Industry-Specific Considerations</h2>
+        <p><strong>Healthcare:</strong> LaunchGuard360 processes are designed to be HIPAA-conscious, avoiding collection of any protected health information.</p>
+        <p><strong>Education:</strong> FERPA compliance ensured through anonymous collection methods that do not involve student records.</p>
+        <p><strong>Community:</strong> Local programs and policy initiatives are supported with anonymized input that avoids collecting personally identifying details from residents or community members.</p>
+        <p><strong>Enterprise:</strong> Confidential business information is protected through secure processing and non-disclosure agreements.</p>
+      </section>
+
+      <section id="rights-contact" class="content-card">
+        <h2>Your Rights and Contacts</h2>
+        <p>As feedback is collected anonymously, individual data subject rights (access, correction, deletion) do not apply to the feedback process itself. However, organizations can:</p>
+        <ul>
+          <li>Request details about data processing practices</li>
+          <li>Modify or terminate LaunchGuard360 services</li>
+          <li>Request deletion of organizational insights</li>
+        </ul>
+        <p>For privacy questions or concerns: <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a></p>
+      </section>
+
+      <!-- CTA -->
+      <section class="content-card cta-card" aria-labelledby="privacy-cta-title">
+        <h2 id="privacy-cta-title">Questions About Privacy?</h2>
+        <p>We're committed to transparent data practices and protecting feedback confidentiality. Contact us with any privacy questions or concerns.</p>
+        <div class="cta-buttons">
+          <a class="btn primary" href="mailto:launchguard360@gmail.com?subject=Privacy%20Questions&body=Hello%2C%20I%20have%20questions%20about%20LaunchGuard360%20privacy%20practices%3A">
+            Contact Us About Privacy →
+          </a>
+          <a class="btn secondary" href="/security/">View Security Practices</a>
         </div>
-    </header>
+      </section>
+    </article>
 
-    <main>
-        <!-- Page Hero -->
-        <section class="page-hero">
-            <div class="container">
-                <h1>Privacy Policy</h1>
-                <p>How LaunchGuard360 protects feedback confidentiality and manages data throughout the governance process</p>
-            </div>
-        </section>
+    <!-- Sidebar TOC -->
+    <aside class="policy-aside" aria-label="On this page">
+      <div class="card toc">
+        <h3>On this page</h3>
+        <ol>
+          <li><a href="#anonymous-by-design">Anonymous by Design</a></li>
+          <li><a href="#data-collection">Data Collection Practices</a></li>
+          <li><a href="#processing-neutralization">Processing &amp; Neutralization</a></li>
+          <li><a href="#sharing-governance">Sharing &amp; Governance</a></li>
+          <li><a href="#security-retention">Security &amp; Retention</a></li>
+          <li><a href="#industry-specific">Industry-Specific</a></li>
+          <li><a href="#rights-contact">Your Rights &amp; Contacts</a></li>
+        </ol>
+      </div>
 
-        <!-- Content Section -->
-        <section class="content-section">
-            <div class="container">
-                <div class="hero-stats" style="max-width: 800px; margin: 0 auto 3rem;">
-                    <p style="color: #4a5568; font-size: 1rem; text-align: center;"><em>Last updated: December 2024</em></p>
-                </div>
+      <div class="note mini-note">
+        <strong>Tip:</strong> Use anonymous paper forms for maximum candor and minimal data risk.
+      </div>
+    </aside>
+  </main>
 
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Anonymous by Design</h3>
-                    <p>LaunchGuard360's core methodology is built on anonymous feedback collection. We do not collect, store, or process personally identifiable information from feedback providers. Our paper-based collection system ensures no digital tracking of individual responses.</p>
-                </div>
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <nav aria-label="Footer">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="mailto:launchguard360@gmail.com">Contact</a>
+    </nav>
+    <small>© <span id="year"></span> LaunchGuard360™ — Patent Pending</small>
+  </footer>
 
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Data Collection Practices</h3>
-                    <p><strong>What we collect:</strong></p>
-                    <ul style="margin: 1rem 0; padding-left: 2rem; color: #4a5568;">
-                        <li>Anonymous feedback content related to rollout experiences</li>
-                        <li>General organizational context (department, role type - not specific individuals)</li>
-                        <li>Timeline information for governance cycle integration</li>
-                    </ul>
-                    <p><strong>What we do not collect:</strong></p>
-                    <ul style="margin: 1rem 0; padding-left: 2rem; color: #4a5568;">
-                        <li>Names, email addresses, or other personal identifiers</li>
-                        <li>Individual performance data or evaluations</li>
-                        <li>Personal opinions about specific people</li>
-                    </ul>
-                </div>
-
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Data Processing and Neutralization</h3>
-                    <p>Our neutralization process transforms raw feedback into actionable insights while maintaining anonymity:</p>
-                    <ul style="margin: 1rem 0; padding-left: 2rem; color: #4a5568;">
-                        <li>Individual responses are aggregated into thematic insights</li>
-                        <li>Identifying details are removed or generalized</li>
-                        <li>Insights are categorized by issue type and urgency</li>
-                        <li>No individual response is traceable to a specific person</li>
-                    </ul>
-                </div>
-
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Data Sharing and Governance Integration</h3>
-                    <p>LaunchGuard360 shares only neutralized insights with organizational leadership:</p>
-                    <ul style="margin: 1rem 0; padding-left: 2rem; color: #4a5568;">
-                        <li>Insights are shared with designated governance contacts only</li>
-                        <li>No raw feedback or individual responses are shared</li>
-                        <li>Data remains within the client organization's governance structure</li>
-                        <li>Third-party sharing requires explicit organizational consent</li>
-                    </ul>
-                </div>
-
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Data Security and Retention</h3>
-                    <p><strong>Physical Security:</strong> Paper-based feedback forms are securely stored and processed in controlled environments.</p>
-                    <p><strong>Digital Security:</strong> Any digital processing uses encrypted systems with access limited to authorized personnel.</p>
-                    <p><strong>Retention:</strong> Raw feedback materials are destroyed after neutralization and insight delivery. Anonymized insights may be retained for trend analysis as specified in client agreements.</p>
-                </div>
-
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Industry-Specific Considerations</h3>
-                    <p><strong>Healthcare:</strong> LaunchGuard360 processes are designed to be HIPAA-conscious, avoiding collection of any protected health information.</p>
-                    <p><strong>Education:</strong> FERPA compliance ensured through anonymous collection methods that do not involve student records.</p>
-                    <p><strong>Enterprise:</strong> Confidential business information is protected through secure processing and non-disclosure agreements.</p>
-                </div>
-
-                <div class="content-card" style="max-width: 800px; margin: 0 auto 2rem;">
-                    <h3>Your Rights and Contacts</h3>
-                    <p>As feedback is collected anonymously, individual data subject rights (access, correction, deletion) do not apply to the feedback process itself. However, organizations can:</p>
-                    <ul style="margin: 1rem 0; padding-left: 2rem; color: #4a5568;">
-                        <li>Request details about data processing practices</li>
-                        <li>Modify or terminate LaunchGuard360 services</li>
-                        <li>Request deletion of organizational insights</li>
-                    </ul>
-                    <p>For privacy questions or concerns: <a href="mailto:launchguard360@gmail.com" style="color: #667eea;">launchguard360@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-container">
-                    <h2 class="cta-title">Questions About Privacy?</h2>
-                    <p class="cta-description">We're committed to transparent data practices and protecting feedback confidentiality. Contact us with any privacy questions or concerns.</p>
-                    
-                    <div class="cta-buttons">
-                        <a href="mailto:launchguard360@gmail.com?subject=Privacy Questions&body=Hello, I have questions about LaunchGuard360 privacy practices:" class="btn-primary">
-                            Contact Us About Privacy →
-                        </a>
-                        <a href="/security/" class="btn-secondary">
-                            View Security Practices
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Industries</h3>
-                    <a href="/healthcare/">Healthcare</a>
-                    <a href="/education/">Education</a>
-                    <a href="/community/">Community</a>
-                    <a href="/enterprise/">Enterprise</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Company</h3>
-                    <a href="/references/">References</a>
-                    <a href="/privacy/">Privacy Policy</a>
-                    <a href="/security/">Security</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <a href="mailto:launchguard360@gmail.com">launchguard360@gmail.com</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 LaunchGuard360. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        function toggleNav() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
-        }
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('active');
-            });
-        });
-
-        document.addEventListener('click', (e) => {
-            const navLinks = document.getElementById('navLinks');
-            const navContainer = document.querySelector('.nav-container');
-            
-            if (!navContainer.contains(e.target)) {
-                navLinks.classList.remove('active');
-            }
-        });
-    </script>
+  <script>
+    // © year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
