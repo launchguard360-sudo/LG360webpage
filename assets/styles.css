@@ -177,3 +177,25 @@ h1, h2 { line-height: 1.2; }
   margin-top: 2rem;  /* only applies to intro paragraphs directly after the flow */
 }
 
+<style>
+  /* Reduce space after hero block */
+  .hero {
+    margin-bottom: 1rem; /* tighten the gap below hero */
+  }
+
+  .hero .blurb {
+    display: block;
+    margin-top: 0.25rem; /* small spacing above blurb */
+    font-size: 0.95rem;
+    color: #4b5563;
+  }
+
+  /* Remove extra top margin on first section after hero */
+  #why-fail {
+    margin-top: 1rem;
+  }
+
+  #why-fail h2 {
+    margin-top: 0; /* avoid double-stacking top margins */
+  }
+</style>
