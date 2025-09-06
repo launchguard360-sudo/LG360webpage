@@ -44,13 +44,123 @@
   <main id="main" class="container policy-wrap" aria-describedby="page-title">
     <!-- Main content -->
     <article class="policy-main content-prose">
-      <!-- your sections remain unchanged -->
-      <!-- ... -->
+      <section id="pilot-overview" class="content-card">
+        <h2>Pilot Overview</h2>
+        <p>LaunchGuard360™ pilots (typically 4–6 weeks) are designed to validate sustainment practices with minimal risk. We collect feedback via anonymous paper forms, neutralize quickly, and retain only anonymized insights. This approach minimizes data exposure while demonstrating the “Closed-Loop Sustainment™” value.</p>
+      </section>
+
+      <section id="scope-datatypes" class="content-card">
+        <h2>Pilot Scope &amp; Data Types</h2>
+        <ul>
+          <li><strong>Collected:</strong> Anonymous rollout feedback, high-level context (e.g., department or role type), and timing for governance cycles.</li>
+          <li><strong>Not Collected:</strong> Names, emails, personal identifiers, performance evaluations, or opinions about specific individuals.</li>
+        </ul>
+        <p>Where pilots intersect with regulated contexts (e.g., healthcare/education), our process avoids PHI/PII by design.</p>
+      </section>
+
+      <section id="collection-method" class="content-card">
+        <h2>Anonymous Collection Method</h2>
+        <ul>
+          <li>Feedback captured on <strong>paper forms</strong> to avoid digital identifiers and tracking.</li>
+          <li>Forms are handled in controlled environments and routed promptly for neutralization.</li>
+          <li>No user accounts or digital identity are required for submission.</li>
+        </ul>
+      </section>
+
+      <section id="neutralization" class="content-card">
+        <h2>Neutralization</h2>
+        <p>Raw feedback is converted into anonymized, actionable insights:</p>
+        <ul>
+          <li>Identifiers are removed or generalized.</li>
+          <li>Responses are aggregated into themes and prioritized by urgency.</li>
+          <li>No single response remains traceable to a specific person.</li>
+        </ul>
+      </section>
+
+      <section id="no-raw-endpoints" class="content-card">
+        <h2>No Raw Data on Laptops</h2>
+        <p>Raw feedback data is <strong>not stored</strong> on employee laptops or desktops. If a digital step is required during neutralization, raw data exists only ephemerally in a secure processing environment and is deleted immediately after insights are produced.</p>
+      </section>
+
+      <section id="data-lifecycle" class="content-card">
+        <h2>Data Lifecycle &amp; Deletion</h2>
+        <p><strong>Ingest → Neutralize → Delete Raw → Retain Insights</strong></p>
+        <ul>
+          <li>Raw inputs are processed only long enough to generate anonymized insights.</li>
+          <li>Raw copies are <strong>destroyed immediately after processing</strong> (paper destruction or secure deletion).</li>
+          <li>Only anonymized insights are retained for governance and trend analysis.</li>
+        </ul>
+      </section>
+
+      <section id="access-controls" class="content-card">
+        <h2>Access Controls (Pilot)</h2>
+        <ul>
+          <li>Limited staff access to handle paper forms and produce insights.</li>
+          <li>Need-to-know principle for viewing neutralized outputs.</li>
+          <li>Basic logging of collection, neutralization, and destruction events.</li>
+        </ul>
+      </section>
+
+      <section id="encryption" class="content-card">
+        <h2>Encryption (Where Applicable)</h2>
+        <ul>
+          <li>Neutralized insights stored in secured repositories protected by standard access controls.</li>
+          <li>If any digital transit occurs, it uses TLS (HTTPS).</li>
+          <li>At-rest encryption applies to the storage systems holding <em>neutralized</em> insights; raw data is not retained digitally.</li>
+        </ul>
+        <p>Because pilots use paper-first, anonymous collection with immediate raw-data destruction, heavy endpoint controls are typically unnecessary.</p>
+      </section>
+
+      <section id="responsibilities" class="content-card">
+        <h2>Client Responsibilities (Pilot)</h2>
+        <ul>
+          <li>Protect collected paper forms until LaunchGuard360™ receives them for neutralization.</li>
+          <li>Avoid adding identifiers (e.g., names, emails) to forms.</li>
+          <li>Designate a governance contact to receive neutralized insights and route actions.</li>
+        </ul>
+      </section>
+
+      <section id="faq" class="content-card">
+        <h2>FAQ</h2>
+        <p><strong>Do you encrypt laptops for pilots?</strong><br>We avoid storing raw data on laptops. If any device touches raw data during processing, it is temporary and deleted immediately after neutralization.</p>
+        <p><strong>Can we run a digital-only pilot?</strong><br>Yes, but to keep risk minimal, we recommend paper-first submission for pilots. Digital pilots require confirming equivalent anonymization and deletion controls.</p>
+        <p><strong>What about HIPAA/FERPA?</strong><br>Our pilot method avoids PHI/PII collection. If your context requires it, we’ll confirm scoping to ensure no regulated identifiers are captured.</p>
+      </section>
+
+      <!-- CTA -->
+      <section class="content-card cta-card" aria-labelledby="pilot-cta-title">
+        <h2 id="pilot-cta-title">Ready to Run a Pilot?</h2>
+        <p>Validate sustainment safely: anonymous paper capture, rapid neutralization, and no raw data stored on laptops.</p>
+        <div class="cta-buttons">
+          <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfVO9STw-SW-xD0ZwwHOmo7SEHRM7z7a-D8gt2g18EJThSwFA/viewform?usp=dialog" target="_blank" rel="noopener">
+            Start a 6-Week Paper Pilot →
+          </a>
+          <a class="btn secondary" href="/privacy/">View Privacy Policy</a>
+        </div>
+      </section>
     </article>
 
     <!-- Sidebar TOC -->
     <aside class="policy-aside" aria-label="On this page">
-      <!-- your sidebar content -->
+      <div class="card toc">
+        <h3>On this page</h3>
+        <ol>
+          <li><a href="#pilot-overview">Pilot Overview</a></li>
+          <li><a href="#scope-datatypes">Pilot Scope &amp; Data Types</a></li>
+          <li><a href="#collection-method">Anonymous Collection</a></li>
+          <li><a href="#neutralization">Neutralization</a></li>
+          <li><a href="#no-raw-endpoints">No Raw Data on Laptops</a></li>
+          <li><a href="#data-lifecycle">Data Lifecycle &amp; Deletion</a></li>
+          <li><a href="#access-controls">Access Controls</a></li>
+          <li><a href="#encryption">Encryption</a></li>
+          <li><a href="#responsibilities">Client Responsibilities</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ol>
+      </div>
+
+      <div class="note mini-note">
+        <strong>Tip:</strong> Keep forms anonymous. Don’t add names or emails. It reduces risk and improves candor.
+      </div>
     </aside>
   </main>
 
@@ -83,3 +193,4 @@
   </script>
 </body>
 </html>
+
