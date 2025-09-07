@@ -329,7 +329,7 @@ header {
   header { background:#0b0c0f; }
 }
 .steps-detail p {
-  color: #e0e0e0;      /* light gray for readability */
+  color: #f5f5f5 !important;  /* force near-white text */
   line-height: 1.6;    /* makes text easier to read on mobile */
   margin: 0 0 1em;     /* keep spacing consistent, not too big */
 }
