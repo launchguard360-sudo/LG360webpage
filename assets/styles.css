@@ -328,3 +328,13 @@ header {
 @media (prefers-color-scheme: dark){
   header { background:#0b0c0f; }
 }
+.steps-detail p {
+  color: #e0e0e0;      /* light gray for readability */
+  line-height: 1.6;    /* makes text easier to read on mobile */
+  margin: 0 0 1em;     /* keep spacing consistent, not too big */
+}
+
+.steps-detail h3 {
+  color: #ffffff;      /* bright white for headings */
+  margin-bottom: 0.4em;
+}
